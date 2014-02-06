@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>{$tw[titles]}</title>
+	<meta name="keywords" content="{$tw[seo_keywords]}" />
+	<meta name="description" content="{$tw[seo_description]}" />
+	<link rel="shortcut icon" type="image/x-icon" href= "{$tw[webdir]}favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="{$tw[tpl]}css/global.css" />
+	<link rel="stylesheet" href="{$tw[tpl]}css/css.css" type="text/css" />
+	<link rel="stylesheet" href="{$tw[tpl]}css/slide.css" type="text/css" />
+  <script type="text/javascript" src="{$tw[tpl]}js/main.js"></script>
+	<style type="text/css">
+#slideshow .btns s i {
+_filter: progid: dximagetransform.microsoft.alphaimageloader(enabled=true, sizingmethod=scale, src="http://oss.aliyuncs.com/nkseed/images/btn_slideshow.png");
+_background: none;
+}
+#content {
+text-align:center;
+font-size:36px;
+	
+	}
+</style>
+<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.10.2/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery.migrate/1.2.1/jquery-migrate-1.2.1.min.js"></script>
+<script type = "text/javascript" >
+    $(document).ready(function() {
+        var $navli = $("div.nav ul li");
+        $navli.css("width", 90 / $("div.nav ul li").size() + "%");;
+    });
+    //右键点击首页下部版权信息进入管理后台
+    $(document).ready(function() {
+        var $c = $("div#footer p");
+        $c.mousedown(function(event) {
+            $(this).bind('contextmenu', function(e) {
+                return false;
+            });
+            if (3 == event.which || 1 == event.which) {
+                $pathname = window.location.pathname.replace(/index.php/,"");
+                window.location.href =
+                    ($pathname == null || $pathname == "") ?
+                    ("/admin") : (window.location.protocol + "//" + window.location.host + $pathname + "admin");
+            }
+        });
+    });
+</script>
+</head>
+
+{inc:header.htm}
+
+  <!--中心区开始-->
+  <div id="center"> 
+    <!--主内容区大图开始-->
+   <div id="slideshow" rel="auto-play">
+
+                      <div class="img"> <span><a href="http://www.nkseed.net/shenda101.php" target="_blank"><img src="http://oss.aliyuncs.com/nkseed/images/01.jpg" /></a><a href="http://www.nkseed.net/zhongyuwang.php" target="_blank"><img src="http://oss.aliyuncs.com/nkseed/images/02.jpg" /></a><a href="http://www.nkseed.net/meiyu36.php" target="_blank"><img src="http://oss.aliyuncs.com/nkseed/images/03.jpg" /></a></span>
+
+        <div class="paging pattern"></div>
+
+        <div class="paging subpattern"></div>
+
+      </div>
+
+    </div>
+    <script type="text/javascript" src="{$tw[tpl]}js/jquery.slider.js"></script> <!--中心区大图结束--> 
+	
+	
+  <!--内容区开始-->
+  <div id="content">
+  <p>
+  河南农科良繁 欢迎您！
+  </p>
+  <p>
+  跟我合作，让您发财！
+  </p>
+  <p>
+  让利于客户，以质量求生存！
+  </p>
+  
+  </div>
+  <!--内容区结束-->
+  
+  
+  </div>
+  
+  
+  <!--中心区结束--> 
+
+  
+  {inc:footer.htm}
+
+<!--百度统计-->
+<div id="stats">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff86937d8c9f8787e0e402d791021d881' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=21595498" charset="UTF-8"></script>
+</div>
+</body>
+</html>
+
+<?php
+require_once($_SERVER['DOCUMENT_ROOT'].'/360safe/360webscan.php');
+?>

@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,ul,li,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,table{margin:0;padding:0}
+ul,dl{list-style:none}
+img{border:0}
+html{width:100%;}
+body {
+	background-color:transparent;
+	border:0 none;
+	margin:0px;
+	padding:0px;
+}
+body #container {
+	/*width:980px;*/
+	margin:0 auto;
+	background-image:url(http://oss.aliyuncs.com/nkseed/images/contentbg.jpg);
+	background-position:0px 300px;
+	background-repeat:repeat-x;
+}
+img {
+	border:0;
+}
+.header {
+	height:98px;
+	margin:0px auto;
+	width:100%;
+	background:url(http://oss.aliyuncs.com/nkseed/images/topbg.jpg) no-repeat center;
+}
+.header .logo {
+	width:480px;
+	height:98px;
+	float:left;
+	margin:0px auto auto 13%;
+}
+.header .right {
+	width:177px;
+	height:98px;
+	float:right;
+}
+.header .right .home {
+	font-size:12px;
+	text-align:right;
+	margin-top:20px;
+	clear:both;
+}
+.header .right .tel {
+	height:17px;
+	margin-top:20px;
+	width:177px;
+	height:17px;
+}
+.header .search{height:25px;width:191px;padding:5px 0 0 10px;margin:10px 2px 0 0;overflow:hidden;float:right;background:url(../img/bg.gif) 0 0 no-repeat}
+.header .search .s_set{border:0}
+.header .search .s_tit{border:0;width:90px;vertical-align:top}
+.header .search .s_sub{border:0;width:22px;height:22px;background:transparent;vertical-align:top}
+.nav {
+	background-image:url(../images/nav-red-bg.jpg);
+	background-repeat:repeat-x;
+	/*background-size:100% 50px;*/
+
+	background-color:transparent;
+	height:33px;
+	width:100%;
+	border:0 none;
+	padding:0 auto 0 auto;
+	margin:0px auto 0px auto;
+}
+.nav ul {
+	list-style:none outside none;
+	width:90%;
+	border:0 none;
+	padding:0 auto 0 auto;
+	margin:0px auto;
+}
+.nav ul li {
+	float:left;
+	background:url(../images/nav-div.jpg) no-repeat right;
+	width:24%;
+	border:0 none;
+	text-align:center;
+	margin:3px auto 0px auto;
+}
+.nav ul a {
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	font:18px "微软雅黑", "黑体", "宋体";
+}
+.nav ul a:hover {
+	color:yellow;
+	position:relative;
+	top:1px;
+	left:2px;
+}
+#center,#slideshow{
+	padding:0px;
+	margin:0px;
+	
+	}
+#content {
+	width:88%;
+	height:400px;
+	margin:0px auto;
+	padding:0 auto;
+	font-family:"微软雅黑", "黑体", "宋体";
+	font-size:18px;
+	background:url(../images/contentbg.jpg) repeat-x;
+	
+}
+#footer {
+	height:80px;
+	width:100%;
+	margin:0px;
+ background-color:;
+}
+#footer p {
+	font-size:14px;
+	text-align:center;
+}
+
+/*intro.php*/
+#content h1{
+margin-top:0px;
+}
+#content h2{	
+	text-align:left;
+	margin-top:0px;
+	}
+/*#content  #product-describe-heading{
+	font-size:20px;
+	text-align:left;
+
+}*/	
+#content p{
+	
+	text-indent:2em;
+	}	
+.boldred {
+	color:red;
+	font:20px "微软雅黑", "黑体", "宋体";
+}
+
+
+
+
+
+/*contact.php*/
+#content #map1{
+	float:right;
+	margin:30px 30px;
+	width:500px;
+	height:300px;
+	
+	
+	}
+
+
+
+

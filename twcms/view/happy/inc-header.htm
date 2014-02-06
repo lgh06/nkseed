@@ -1,0 +1,41 @@
+<body>
+<div id="container">
+	<!--头部开始-->
+	<!--顶部Logo开始 -->
+  <div class="header">
+    <div class="logo"><a href="{$tw[weburl]}"><img src="{$tw[tpl]}img/logo.jpg" alt="{$tw[webname]}" title="{$tw[webname]}" /></a></div>
+    <div class="right">
+        <div class="search home">
+			<form id="search_form" method="get" action="{$tw[webdir]}index.php">
+				<input type="hidden" name="u" value="search-index" />
+				<select name="mid" class="s_set">
+					{loop:$tw[mod_name] $v $k}<option value="{$k}"{if:isset($_GET['mid']) && $_GET['mid']==$k} selected="selected"{/if}>{$v}</option>{/loop}
+				</select>
+				<input class="s_tit" type="text" name="keyword" value="{$keyword}" />
+				<input class="s_sub" type="submit" value="" />
+			</form>
+		</div>
+      <div class="tel"><a href="{$tw[webdir]}index.php"><img src="http://oss.aliyuncs.com/nkseed/images/tel.jpg" /></a></div>
+    </div>
+	
+  </div>
+		
+	<!--头部结束-->
+
+	<!--导航开始-->
+	{block:navigate}
+	<div class="nav">
+    <ul>
+      <li {if:empty($tw_var['topcid'])} class="on"{/if}><a href="{$tw[weburl]}">首页</a></li>
+	  
+	  {loop:$data $v}
+			
+				<li><a href="{$v[url]}" target="{$v[target]}">{$v[name]}</a></li>
+													
+			
+			{/loop}
+      
+    </ul>
+  </div>
+	{/block}
+	<!--导航结束-->
